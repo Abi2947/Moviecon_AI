@@ -95,6 +95,6 @@ history = model.fit([train_data["user_id"], train_data["movie_id"]], train_data[
 predictions = model.predict([test_data["user_id"], test_data["movie_id"]])
 predictions = predictions.flatten()
 
-# Calculate the mean squared error of the predictions
+# Calculate the mean squared error of the prediction
 mse = mean_squared_error(test_data["rating"], predictions)
 print("Mean Squared Error: ", mse)
